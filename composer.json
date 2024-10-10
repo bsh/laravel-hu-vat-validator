@@ -1,0 +1,65 @@
+{
+  "name": "bsh/laravel-hu-vat-validator",
+  "description": "A Laravel package to validate Hungarian VAT numbers",
+  "keywords": [
+    "bsh",
+    "laravel-hu-vat-validator",
+    "vat-hu-validator",
+    "vat-validator",
+    "laravel-vat-validator",
+    "laravel",
+    "vat",
+    "laravel-validator"
+  ],
+  "homepage": "https://github.com/bsh/laravel-hu-vat-validator",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Laszlo Kovacs",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "bsh\\LaravelHuVatValidator\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "bsh\\LaravelHuVatValidator\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "bsh\\LaravelHuVatValidator\\LaravelHuVatValidatorServiceProvider"
+      ],
+      "aliases": {
+        "VatValidator": "bsh\\LaravelHuVatValidator\\Facades\\VatValidatorFacade"
+      }
+    }
+  },
+  "require": {
+    "php": "^8.2",
+    "illuminate/contracts": "^10.0|^11.0",
+    "illuminate/support": "^10.0|^11.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.4",
+    "rector/rector": "^1.2",
+    "orchestra/testbench": "^9.5",
+    "phpstan/phpstan-deprecation-rules": "^1.2",
+    "phpstan/phpstan-phpunit": "^1.4",
+    "driftingly/rector-laravel": "^1.2",
+    "phpstan/extension-installer": "^1.4",
+    "orchestra/testbench-dusk": "^9.8",
+    "orchestra/testbench-browser-kit": "^9.1",
+    "friendsofphp/php-cs-fixer": "^3.64"
+  },
+  "config": {
+    "allow-plugins": {
+      "phpstan/extension-installer": false
+    }
+  }
+}
