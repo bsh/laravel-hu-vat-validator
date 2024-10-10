@@ -9,6 +9,11 @@
 <p>You can install the package via composer:</p>
 <pre><code>composer require bsh/laravel-hu-vat-validator</code></pre>
 <p>The package will automatically register itself.</p>
+
+<h2>Publishing Language Files</h2>
+<p>After installing the package, you may want to publish the language files to customize the validation messages. Run the following command to publish the language files to your application's `resources/lang/vendor` directory:</p>
+<pre><code>php artisan vendor:publish --tag=laravel-hu-vat-validator-lang</code></pre>
+
 <h2>Usage</h2>
 <pre><code>use bsh\LaravelHuVatValidator\Facades\VatValidatorFacade as VatValidator;
 

@@ -2,9 +2,10 @@
 
 namespace bsh\LaravelHuVatValidator\Tests;
 
-use Orchestra\Testbench\TestCase;
 use bsh\LaravelHuVatValidator\Facades\VatValidatorFacade;
 use bsh\LaravelHuVatValidator\Validators\VatValidator;
+use Orchestra\Testbench\TestCase;
+
 class VatValidatorFacadeTest extends TestCase
 {
     public function testVatValidatorFacade(): void
