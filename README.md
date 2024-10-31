@@ -47,7 +47,7 @@ VatValidator::validate('12345678-1-23');</code></pre>
 
 // Adószám formátum ellenőrzése
 VatValidator::validate('12345678-1-23');</code></pre>
-<h2>Valitator</h2>
+<h2>Validator</h2>
 <p>A csomag egy új Validator szabályt regisztrál.</p>
 <ul>
 <li><code>hu_vat_number</code>: Az mezőnek érvényes magyar adószámnak kell lennie.</li>
